@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Ciuchi - Full Profile</title>
+    <title>Robert Mario Ciuchi - Full Profile</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Use Inter font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
         /* Base styles inherited from index.html */
         html {
@@ -55,9 +55,19 @@
             padding-bottom: 0.5rem;
             margin-bottom: 2rem;
         }
+        
+        /* "Data Analyst" Tech Background - Abstract Network/Grid */
+        .bg-pattern {
+            background-color: #0f172a; /* Very dark slate/blue base */
+            background-image: 
+                linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+                radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.05) 0%, transparent 60%);
+            background-size: 40px 40px, 40px 40px, 100% 100%;
+        }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-pattern text-gray-200">
 
     <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg border-b border-gray-800 h-16">
@@ -66,7 +76,7 @@
                 <!-- Logo/Name -->
                 <div class="flex-shrink-0">
                     <a href="index.html" class="text-2xl font-bold gradient-text">
-                        R. Ciuchi
+                        Robert Mario Ciuchi
                     </a>
                 </div>
                 <!-- Desktop Menu -->
@@ -75,7 +85,6 @@
                         <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Home</a>
                         <a href="#experience" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-emerald-400 border border-emerald-600 bg-emerald-600/20">CV</a>
                         <a href="#projects" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                        <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
                 <!-- Mobile Menu Button (Hamburger) -->
@@ -97,94 +106,114 @@
                 <a href="index.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Home</a>
                 <a href="#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-emerald-400 border border-emerald-600 bg-emerald-600/20">CV</a>
                 <a href="#projects" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-                <a href="#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content Area with Two Columns on Desktop -->
     <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header class="text-center pb-12">
-            <h1 class="text-5xl font-extrabold gradient-text mb-2">Robert Ciuchi</h1>
-            <p class="text-xl text-gray-300">Finance System Analyst | Full Professional Profile</p>
+        <header class="text-center pb-16">
+            <h1 class="text-5xl font-extrabold gradient-text mb-3">Robert Mario Ciuchi</h1>
+            <p class="text-xl text-gray-400 font-light tracking-wide">Finance System Analyst | Full Professional Profile</p>
         </header>
         
-        <div class="md:grid md:grid-cols-12 md:gap-12">
+        <div class="md:grid md:grid-cols-12 md:gap-12 items-start">
             
             <!-- Sidebar (Left Column - 4/12 width) -->
-            <div class="md:col-span-4 space-y-12 mb-12 md:mb-0">
-                <div class="md:sticky md:top-24 space-y-10">
+            <div class="md:col-span-4 space-y-10 mb-12 md:mb-0 md:sticky md:top-24">
                 
-                    <!-- About / Summary Section -->
-                    <section id="about" class="p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700">
-                        <h2 class="text-2xl font-bold mb-4 text-emerald-400 border-b border-gray-600 pb-2">Summary</h2>
-                        <p class="text-gray-400 text-sm leading-relaxed mb-4">
-                            Analytical and results-driven professional specializing in systems implementation, data automation (Python/SQL/VBA), and financial processes. Driving efficiency through robust platform management and business intelligence.
+                <!-- About / Summary Section -->
+                <section id="about" class="p-6 bg-gray-800/80 backdrop-blur rounded-xl shadow-lg border border-gray-700">
+                    <h2 class="text-2xl font-bold mb-4 text-emerald-400 border-b border-gray-600 pb-2">Summary</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Analytical and results-driven professional specializing in systems implementation, data automation (Python/SQL/VBA), and financial processes. Driving efficiency through robust platform management and business intelligence.
+                    </p>
+                    <div class="space-y-3 text-sm text-gray-400">
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            London, United Kingdom
                         </p>
-                        <div class="space-y-3 text-sm text-gray-300">
-                            <p class="flex items-center"><span class="font-semibold w-24 text-emerald-500">Location:</span> London, UK</p>
-                            <p class="flex items-center"><span class="font-semibold w-24 text-emerald-500">Education:</span> Solent University, Comp. Sci</p>
-                        </div>
-                    </section>
+                        <p class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+                            Solent University, Comp. Sci
+                        </p>
+                    </div>
+                </section>
 
-                    <!-- Skills Section -->
-                    <section id="skills" class="p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700">
-                        <h2 class="text-2xl font-bold mb-6 text-emerald-400 border-b border-gray-600 pb-2">Technical Stack</h2>
-                        <div class="grid grid-cols-3 gap-3">
-                            <!-- Python/Data Automation -->
-                            <div class="flex flex-col items-center p-2 bg-gray-900 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600">
-                                <svg class="w-6 h-6 text-yellow-400 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v4m0 8v4m8-8H4M4 8h16M4 16h16"/></svg>
-                                <p class="text-[10px] font-semibold text-gray-200">Python</p>
-                            </div>
-                            <!-- SQL/Databases -->
-                            <div class="flex flex-col items-center p-2 bg-gray-900 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600">
-                                <svg class="w-6 h-6 text-emerald-400 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H7M17 19H7"/></svg>
-                                <p class="text-[10px] font-semibold text-gray-200">SQL</p>
-                            </div>
-                            <!-- Power BI -->
-                            <div class="flex flex-col items-center p-2 bg-gray-900 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600">
-                                <svg class="w-6 h-6 text-green-500 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20v-8M18 20V8M2 20h20"/></svg>
-                                <p class="text-[10px] font-semibold text-gray-200">PowerBI</p>
-                            </div>
-                            <!-- Dynamics 365 -->
-                            <div class="flex flex-col items-center p-2 bg-gray-900 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600">
-                                <svg class="w-6 h-6 text-emerald-700 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-                                <p class="text-[10px] font-semibold text-gray-200">D365</p>
-                            </div>
-                            <!-- Azure DevOps -->
-                            <div class="flex flex-col items-center p-2 bg-gray-900 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600">
-                                <svg class="w-6 h-6 text-cyan-400 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l4-4-4-4M19 14H5M8 6l-4 4 4 4"/></svg>
-                                <p class="text-[10px] font-semibold text-gray-200">Azure</p>
-                            </div>
-                            <!-- Other Tools -->
-                            <div class="flex flex-col items-center p-2 bg-gray-900 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600">
-                                <svg class="w-6 h-6 text-orange-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                                <p class="text-[10px] font-semibold text-gray-200">JS/VBA</p>
-                            </div>
+                <!-- Skills Section (Split into 2 categories) -->
+                <section id="skills" class="p-6 bg-gray-800/80 backdrop-blur rounded-xl shadow-lg border border-gray-700">
+                    <h2 class="text-2xl font-bold mb-6 text-emerald-400 border-b border-gray-600 pb-2">Technical Stack</h2>
+                    
+                    <!-- Category 1: Finance Systems -->
+                    <h3 class="text-sm font-bold text-gray-300 uppercase tracking-wider mb-3">Finance Systems & ERP</h3>
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <!-- Dynamics 365 -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <svg class="w-6 h-6 text-emerald-700 mb-1 group-hover:text-emerald-500 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">Dynamics 365</p>
                         </div>
-                    </section>
+                        <!-- Sage -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <!-- Sage placeholder icon (document style) -->
+                            <svg class="w-6 h-6 text-green-600 mb-1 group-hover:text-green-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">Sage</p>
+                        </div>
+                        <!-- Workday (Placeholder) -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <!-- Workday placeholder (cloud/people) -->
+                            <svg class="w-6 h-6 text-blue-500 mb-1 group-hover:text-blue-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">Workday</p>
+                        </div>
+                    </div>
 
-                    <!-- Download and Social Section -->
-                    <section class="p-6 bg-gray-800 rounded-xl shadow-lg border border-gray-700 space-y-6">
-                        <h2 class="text-2xl font-bold text-emerald-400 border-b border-gray-600 pb-2">Downloads</h2>
-                        <a href="RobertCiuchi_CV.pdf" download="RobertCiuchi_CV.pdf" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-xl shadow-emerald-500/30 w-full justify-center text-base">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                            Download Full PDF
+                    <!-- Category 2: Programming & Data -->
+                    <h3 class="text-sm font-bold text-gray-300 uppercase tracking-wider mb-3">Programming & Data</h3>
+                    <div class="grid grid-cols-3 gap-3">
+                        <!-- Python -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <svg class="w-6 h-6 text-yellow-400 mb-1 group-hover:text-yellow-300 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v4m0 8v4m8-8H4M4 8h16M4 16h16"/></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">Python</p>
+                        </div>
+                        <!-- SQL -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <svg class="w-6 h-6 text-emerald-400 mb-1 group-hover:text-emerald-300 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H7M17 19H7"/></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">SQL</p>
+                        </div>
+                        <!-- Power BI -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <svg class="w-6 h-6 text-green-500 mb-1 group-hover:text-green-400 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20v-8M18 20V8M2 20h20"/></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">PowerBI</p>
+                        </div>
+                        <!-- Azure DevOps -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <svg class="w-6 h-6 text-cyan-400 mb-1 group-hover:text-cyan-300 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l4-4-4-4M19 14H5M8 6l-4 4 4 4"/></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">Azure</p>
+                        </div>
+                        <!-- JS/VBA -->
+                        <div class="flex flex-col items-center p-2 bg-gray-900/60 rounded-lg transition duration-300 transform hover:scale-105 border-t-2 border-transparent hover:border-emerald-600 group">
+                            <svg class="w-6 h-6 text-orange-400 mb-1 group-hover:text-orange-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            <p class="text-[10px] font-semibold text-gray-300 group-hover:text-white">JS/VBA</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Download and Social Section -->
+                <section class="p-6 bg-gray-800/80 backdrop-blur rounded-xl shadow-lg border border-gray-700 space-y-6">
+                    <h2 class="text-2xl font-bold text-emerald-400 border-b border-gray-600 pb-2">Downloads & Links</h2>
+                    <a href="RobertCiuchi_CV.pdf" download="RobertCiuchi_CV.pdf" class="inline-flex items-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-xl shadow-emerald-500/30 w-full justify-center text-base">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Download Full PDF
+                    </a>
+                    <div class="flex justify-center space-x-6 pt-4 border-t border-gray-700 mt-6">
+                        <!-- Social Links -->
+                        <a href="https://linkedin.com/in/RCiuchi" target="_blank" class="text-gray-400 hover:text-emerald-400 transition duration-300 transform hover:scale-110" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM4 9h4v12H4zM6 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
                         </a>
-                        <div class="flex justify-center space-x-6 pt-4 border-t border-gray-700 mt-6">
-                            <!-- Social Links -->
-                            <a href="https://linkedin.com/in/RCiuchi" target="_blank" class="text-gray-400 hover:text-emerald-400 transition duration-300" aria-label="LinkedIn">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM4 9h4v12H4zM6 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
-                            </a>
-                            <a href="#" class="text-gray-400 hover:text-emerald-400 transition duration-300" aria-label="GitHub">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.423 2.858 8.136 6.837 9.489.5.092.682-.218.682-.482 0-.237-.008-.865-.013-1.724-2.788.604-3.376-1.34-3.376-1.34-.455-1.152-1.112-1.458-1.112-1.458-.908-.618.068-.606.068-.606 1.002.071 1.531 1.03 1.531 1.03.89 1.529 2.336 1.087 2.905.833.091-.645.349-1.087.633-1.339-2.228-.255-4.568-1.114-4.568-4.94 0-1.091.39-1.986 1.029-2.682-.103-.255-.446-1.268.098-2.64 0 0 .84-.268 2.75 1.025a9.43 9.43 0 0 1 2.5-.333c.847-.07 1.695-.07 2.5.333 1.91-1.293 2.75-1.025 2.75-1.025.546 1.372.203 2.385.103 2.64.64.696 1.03 1.591 1.03 2.682 0 3.837-2.344 4.681-4.576 4.933.36.31.683.927.683 1.868 0 1.346-.013 2.428-.013 2.75 0 .267.18.577.688.484C19.14 20.15 22 16.437 22 12.017 22 6.484 17.523 2 12 2z" clip-rule="evenodd"/></svg>
-                            </a>
-                            <a href="mailto:robertciuchi@hotmail.co.uk" class="text-gray-400 hover:text-emerald-400 transition duration-300" aria-label="Email">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
-                            </a>
-                        </div>
-                    </section>
-                </div>
+                        <a href="#" class="text-gray-400 hover:text-emerald-400 transition duration-300 transform hover:scale-110" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.423 2.858 8.136 6.837 9.489.5.092.682-.218.682-.482 0-.237-.008-.865-.013-1.724-2.788.604-3.376-1.34-3.376-1.34-.455-1.152-1.112-1.458-1.112-1.458-.908-.618.068-.606.068-.606 1.002.071 1.531 1.03 1.531 1.03.89 1.529 2.336 1.087 2.905.833.091-.645.349-1.087.633-1.339-2.228-.255-4.568-1.114-4.568-4.94 0-1.091.39-1.986 1.029-2.682-.103-.255-.446-1.268.098-2.64 0 0 .84-.268 2.75 1.025a9.43 9.43 0 0 1 2.5-.333c.847-.07 1.695-.07 2.5.333 1.91-1.293 2.75-1.025 2.75-1.025.546 1.372.203 2.385.103 2.64.64.696 1.03 1.591 1.03 2.682 0 3.837-2.344 4.681-4.576 4.933.36.31.683.927.683 1.868 0 1.346-.013 2.428-.013 2.75 0 .267.18.577.688.484C19.14 20.15 22 16.437 22 12.017 22 6.484 17.523 2 12 2z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </section>
             </div>
             
             <!-- Main Content (Right Column - 8/12 width) -->
@@ -195,47 +224,47 @@
                     <h2 class="text-3xl font-bold mb-10 gradient-text section-divider">Professional Experience</h2>
 
                     <!-- Experience Card: Just Eat Takeaway (Current Role) -->
-                    <div class="mb-12 p-8 bg-gray-800 rounded-xl shadow-2xl border-l-4 border-emerald-600">
+                    <div class="mb-12 p-8 bg-gray-800/80 backdrop-blur rounded-xl shadow-2xl border-l-4 border-emerald-600 hover:border-emerald-500 transition-all duration-300">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-baseline mb-2">
                             <h3 class="text-2xl font-extrabold text-gray-100">Finance System Analyst</h3>
                             <p class="text-md text-emerald-400 font-semibold mt-1 sm:mt-0">June 2024 - Current</p>
                         </div>
                         <p class="text-lg text-gray-300 mb-5">Just Eat Takeaway / Control Risks, London</p>
                         <ul class="job-details space-y-3 text-gray-400 text-base">
-                            <li>**Systems Improvement:** Worked across multiple system improvement initiatives within Microsoft Dynamics 365 (D365 FO), including system upgrades, legal entity setup, and automation of repetitive processes.</li>
-                            <li>**Business Intelligence:** Assisted in the creation of user-friendly **SQL-driven data models** backed by Power BI for display, supporting data-driven decision-making.</li>
-                            <li>**Automation & Deployment:** Created small Python programs to automatically package and deploy tools, improving deployment reliability within the D365 environment via CI/CD pipelines.</li>
-                            <li>**Compliance & Security:** Established and implemented user security (custom duties and privileges) roles and workflow within D365 to meet strict compliance and sovereignty requirements.</li>
-                            <li>**Quality Assurance:** Coordinated quarterly User Acceptance Testing (UAT) cycles and provided system support across global regions (EMEA, APAC, Americas).</li>
+                            <li>Systems Improvement: Worked across multiple system improvement initiatives within Microsoft Dynamics 365 (D365 FO), including system upgrades, legal entity setup, and automation of repetitive processes.</li>
+                            <li>Business Intelligence: Assisted in the creation of user-friendly SQL-driven data models backed by Power BI for display, supporting data-driven decision-making.</li>
+                            <li>Automation & Deployment: Created small Python programs to automatically package and deploy tools, improving deployment reliability within the D365 environment via CI/CD pipelines.</li>
+                            <li>Compliance & Security: Established and implemented user security (custom duties and privileges) roles and workflow within D365 to meet strict compliance and sovereignty requirements.</li>
+                            <li>Quality Assurance: Coordinated quarterly User Acceptance Testing (UAT) cycles and provided system support across global regions (EMEA, APAC, Americas).</li>
                         </ul>
                     </div>
 
                     <!-- Experience Card: Bunzi UK (Past Role) -->
-                    <div class="mb-12 p-8 bg-gray-800 rounded-xl shadow-2xl border-l-4 border-emerald-600">
+                    <div class="mb-12 p-8 bg-gray-800/80 backdrop-blur rounded-xl shadow-2xl border-l-4 border-emerald-600 hover:border-emerald-500 transition-all duration-300">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-baseline mb-2">
                             <h3 class="text-2xl font-extrabold text-gray-100">Accounts Payable Analyst</h3>
                             <p class="text-md text-emerald-400 font-semibold mt-1 sm:mt-0">Oct 2021 - Jun 2024</p>
                         </div>
                         <p class="text-lg text-gray-300 mb-5">Bunzi UK</p>
                         <ul class="job-details space-y-3 text-gray-400 text-base">
-                            <li>**Process Optimization:** Contributed to process improvement initiatives across multiple ERP and CRM systems (Sage and Dynamics 365), identifying underperforming workflows.</li>
-                            <li>**Efficiency:** Participated in the automation and integration of new systems and tools, **reducing invoice processing time by 63%**.</li>
-                            <li>**Stakeholder Management:** Led bi-weekly governance calls to present reports and KPIs, supporting data-driven decision-making and operational transparency.</li>
-                            <li>**System Support:** Successfully deployed and integrated updates, features, and applications for both new and existing in-house systems.</li>
+                            <li>Process Optimization: Contributed to process improvement initiatives across multiple ERP and CRM systems (Sage and Dynamics 365), identifying underperforming workflows.</li>
+                            <li>Efficiency: Participated in the automation and integration of new systems and tools, reducing invoice processing time by 63%.</li>
+                            <li>Stakeholder Management: Led bi-weekly governance calls to present reports and KPIs, supporting data-driven decision-making and operational transparency.</li>
+                            <li>System Support: Successfully deployed and integrated updates, features, and applications for both new and existing in-house systems.</li>
                         </ul>
                     </div>
 
                     <!-- Experience Card: Training Analyst / Developer (Past Role) -->
-                    <div class="p-8 bg-gray-800 rounded-xl shadow-2xl border-l-4 border-emerald-600">
+                    <div class="p-8 bg-gray-800/80 backdrop-blur rounded-xl shadow-2xl border-l-4 border-emerald-600 hover:border-emerald-500 transition-all duration-300">
                         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-baseline mb-2">
                             <h3 class="text-2xl font-extrabold text-gray-100">Training Analyst / Developer</h3>
                             <p class="text-md text-emerald-400 font-semibold mt-1 sm:mt-0">Dec 2019 - 2021</p>
                         </div>
                         <p class="text-lg text-gray-300 mb-5">Covid Period, London</p>
                         <ul class="job-details space-y-3 text-gray-400 text-base">
-                            <li>**Data Analysis:** Conducted data analysis using SQL, Python (Pandas), and Excel (Power Tools), extracting and synthesizing data to generate reports in Power BI.</li>
-                            <li>**Quality Assurance:** Identified, reported, and tracked over **100 software defects**, and analyzed over 500+ test results to guide software refinement.</li>
-                            <li>**Development Support:** Debugged and tested code to ensure modularity and collaborated closely with developers to rectify software glitches.</li>
+                            <li>Data Analysis: Conducted data analysis using SQL, Python (Pandas), and Excel (Power Tools), extracting and synthesizing data to generate reports in Power BI.</li>
+                            <li>Quality Assurance: Identified, reported, and tracked over 100 software defects, and analyzed over 500+ test results to guide software refinement.</li>
+                            <li>Development Support: Debugged and tested code to ensure modularity and collaborated closely with developers to rectify software glitches.</li>
                         </ul>
                     </div>
                 </section>
@@ -245,59 +274,31 @@
                     <h2 class="text-3xl font-bold mb-10 gradient-text section-divider">Key Projects</h2>
 
                     <!-- Project Card 1: Sales Prediction Tool -->
-                    <div class="mb-8 p-6 bg-gray-800 rounded-xl shadow-lg border-l-4 border-emerald-600">
+                    <div class="mb-8 p-6 bg-gray-800/80 backdrop-blur rounded-xl shadow-lg border-l-4 border-emerald-600 hover:bg-gray-800 transition-all duration-300">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-bold text-gray-100">Sales Prediction Tool (Amazon)</h3>
                             <span class="text-sm text-emerald-400 font-semibold">2024</span>
                         </div>
-                        <p class="text-gray-400 text-base mb-4">**Tools:** Python, SQL, ML/Regression</p>
+                        <p class="text-gray-400 text-base mb-4">Tools: Python, SQL, ML/Regression</p>
                         <ul class="job-details space-y-2 text-gray-400 text-sm">
-                            <li>Built a machine learning-based tool to forecast Amazon sales with **87.5% accuracy**.</li>
+                            <li>Built a machine learning-based tool to forecast Amazon sales with 87.5% accuracy.</li>
                             <li>Applied regression and time series models, performing cross-validation and hyperparameter tuning to optimize predictive performance.</li>
                         </ul>
                     </div>
 
                     <!-- Project Card 2: Browser Script for Content Filtering -->
-                    <div class="p-6 bg-gray-800 rounded-xl shadow-lg border-l-4 border-emerald-600">
+                    <div class="p-6 bg-gray-800/80 backdrop-blur rounded-xl shadow-lg border-l-4 border-emerald-600 hover:bg-gray-800 transition-all duration-300">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-xl font-bold text-gray-100">Browser Script for Content Filtering</h3>
                             <span class="text-sm text-emerald-400 font-semibold">2022</span>
                         </div>
-                        <p class="text-gray-400 text-base mb-4">**Tools:** JavaScript, HTML, CSS</p>
+                        <p class="text-gray-400 text-base mb-4">Tools: JavaScript, HTML, CSS</p>
                         <ul class="job-details space-y-2 text-gray-400 text-sm">
                             <li>Created a browser script to improve UI by automatically removing ads and filtering unwanted content.</li>
                             <li>Designed a user-facing dashboard with real-time analytics and custom filter controls for content personalization.</li>
                         </ul>
                     </div>
                 </section>
-                
-                <!-- Contact Section -->
-                <section id="contact" class="pt-10">
-                    <h2 class="text-3xl font-bold mb-10 gradient-text section-divider">Contact Me</h2>
-                    <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl space-y-6">
-                        <p class="text-gray-400 text-center">I am currently open to new opportunities. Send me a message, and I'll get back to you as soon as possible!</p>
-
-                        <form id="contact-form" class="space-y-4">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-300">Your Name</label>
-                                <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-emerald-500 focus:border-emerald-500">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-300">Your Email</label>
-                                <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-emerald-500 focus:border-emerald-500">
-                            </div>
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
-                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-emerald-500 focus:border-emerald-500"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-xl shadow-emerald-500/30">
-                                Send Message
-                            </button>
-                            <p id="form-status" class="text-center text-sm pt-2 h-6"></p>
-                        </form>
-                    </div>
-                </section>
-
             </div>
         </div>
     </main>
@@ -306,7 +307,7 @@
     <footer class="bg-gray-900 border-t border-gray-800 mt-10">
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-sm text-gray-500">
-                &copy; <span id="current-year-2"></span> Robert Ciuchi. All Rights Reserved.
+                &copy; <span id="current-year-2"></span> Robert Mario Ciuchi. All Rights Reserved.
             </p>
         </div>
     </footer>
@@ -337,33 +338,6 @@
 
             // Set current year in footer
             document.getElementById('current-year-2').textContent = new Date().getFullYear();
-             
-             // Contact form submission logic (on the resume.html page)
-            const contactForm = document.getElementById('contact-form');
-            const formStatus = document.getElementById('form-status');
-
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const message = document.getElementById('message').value;
-
-                    if (name && email && message) {
-                        formStatus.className = 'text-center text-sm pt-2 text-green-400';
-                        formStatus.textContent = 'Thank you for your message, ' + name + '! I will respond shortly.';
-                        contactForm.reset();
-                    } else {
-                        formStatus.className = 'text-center text-sm pt-2 text-red-400';
-                        formStatus.textContent = 'Please fill out all fields.';
-                    }
-                    
-                    setTimeout(() => {
-                        formStatus.textContent = '';
-                    }, 5000);
-                });
-            }
         });
     </script>
 </body>

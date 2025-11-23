@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Ciuchi - Full Resume</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles inherited from index.html */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #3b82f6;
+            border-radius: 4px;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: #1f2937;
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: #3b82f6;
+            transition: color 0.2s;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">
+                        R. Ciuchi
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="index.html#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <!-- Current Page Link -->
+                        <span class="nav-link px-3 py-2 rounded-md text-sm font-medium text-blue-400 border border-blue-600 bg-blue-600/20">Resume / CV</span>
+                        <a href="index.html#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="index.html#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <span class="nav-link block px-3 py-2 rounded-md text-base font-medium text-blue-400 border border-blue-600 bg-blue-600/20">Resume / CV</span>
+                <a href="index.html#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header class="text-center pb-12 border-b border-gray-800">
+            <h1 class="text-5xl font-extrabold gradient-text mb-2">Robert Ciuchi</h1>
+            <p class="text-xl text-gray-300">Finance System Analyst | Data Automation Specialist</p>
+            
+            <!-- Download Button -->
+            <a href="RobertCiuchi_CV.pdf" download="RobertCiuchi_CV.pdf" class="mt-6 inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-xl shadow-blue-500/30">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download PDF CV
+            </a>
+            <p class="text-sm text-gray-500 mt-2">*(Please ensure 'RobertCiuchi_CV.pdf' is uploaded to your GitHub repo)*</p>
+        </header>
+
+        <!-- Experience Section (Full Detail) -->
+        <section id="experience" class="py-16">
+            <h2 class="text-3xl font-bold mb-8 gradient-text border-b border-gray-700 pb-2">Professional Experience</h2>
+
+            <!-- Experience Card: Just Eat Takeaway (Current Role) -->
+            <div class="mb-10 p-6 bg-gray-800 rounded-xl shadow-lg">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-bold text-gray-100">Finance System Analyst</h3>
+                    <p class="text-md text-blue-400 font-semibold">June 2024 - Current</p>
+                </div>
+                <p class="text-lg text-gray-300 mb-3">Just Eat Takeaway / Control Risks, London</p>
+                <ul class="space-y-3 text-gray-400 list-disc list-inside text-sm">
+                    <li>**Systems Improvement:** Worked across multiple system improvement initiatives within Microsoft Dynamics 365 (D365 FO), including system upgrades, legal entity setup, and automation of repetitive processes.</li>
+                    <li>**Business Intelligence:** Assisted in the creation of user-friendly **SQL-driven data models** backed by Power BI for display, supporting data-driven decision-making.</li>
+                    <li>**Automation & Deployment:** Created small Python programs to automatically package and deploy tools, improving deployment reliability within the D365 environment via CI/CD pipelines.</li>
+                    <li>**Compliance & Security:** Established and implemented user security (custom duties and privileges) roles and workflow within D365 to meet strict compliance and sovereignty requirements.</li>
+                    <li>**Quality Assurance:** Coordinated quarterly User Acceptance Testing (UAT) cycles and provided system support across global regions (EMEA, APAC, Americas).</li>
+                </ul>
+            </div>
+
+            <!-- Experience Card: Bunzi UK (Past Role) -->
+            <div class="mb-10 p-6 bg-gray-800 rounded-xl shadow-lg">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-bold text-gray-100">Accounts Payable Analyst</h3>
+                    <p class="text-md text-blue-400 font-semibold">Oct 2021 - Jun 2024</p>
+                </div>
+                <p class="text-lg text-gray-300 mb-3">Bunzi UK</p>
+                <ul class="space-y-3 text-gray-400 list-disc list-inside text-sm">
+                    <li>**Process Optimization:** Contributed to process improvement initiatives across multiple ERP and CRM systems (Sage and Dynamics 365), identifying underperforming workflows.</li>
+                    <li>**Efficiency:** Participated in the automation and integration of new systems and tools, **reducing invoice processing time by 63%**.</li>
+                    <li>**Stakeholder Management:** Led bi-weekly governance calls to present reports and KPIs, supporting data-driven decision-making and operational transparency.</li>
+                    <li>**System Support:** Successfully deployed and integrated updates, features, and applications for both new and existing in-house systems.</li>
+                </ul>
+            </div>
+
+            <!-- Experience Card: Training Analyst / Developer (Past Role) -->
+            <div class="p-6 bg-gray-800 rounded-xl shadow-lg">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-bold text-gray-100">Training Analyst / Developer</h3>
+                    <p class="text-md text-blue-400 font-semibold">Dec 2019 - 2021</p>
+                </div>
+                <p class="text-lg text-gray-300 mb-3">Covid Period, London</p>
+                <ul class="space-y-3 text-gray-400 list-disc list-inside text-sm">
+                    <li>**Data Analysis:** Conducted data analysis using SQL, Python (Pandas), and Excel (Power Tools), extracting and synthesizing data to generate reports in Power BI.</li>
+                    <li>**Quality Assurance:** Identified, reported, and tracked over **100 software defects**, and analyzed over 500+ test results to guide software refinement.</li>
+                    <li>**Development Support:** Debugged and tested code to ensure modularity and collaborated closely with developers to rectify software glitches.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section (Full Detail) -->
+        <section id="projects" class="py-16 border-t border-gray-800">
+            <h2 class="text-3xl font-bold mb-8 gradient-text border-b border-gray-700 pb-2">Key Projects</h2>
+
+            <!-- Project Card 1: Sales Prediction Tool -->
+            <div class="mb-8 p-6 bg-gray-800 rounded-xl shadow-lg">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-bold text-gray-100">Sales Prediction Tool (Amazon)</h3>
+                    <span class="text-md text-blue-400 font-semibold">2024</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-3">Tools: Python/SQL</p>
+                <ul class="space-y-2 text-gray-400 list-disc list-inside text-sm">
+                    <li>Built a machine learning-based tool to forecast Amazon sales with **87.5% accuracy**.</li>
+                    <li>Applied regression and time series models, performing cross-validation and hyperparameter tuning to optimize predictive performance.</li>
+                    <li>Developed automated monitoring pipelines to track model drift and retrain models based on market trends.</li>
+                </ul>
+            </div>
+
+            <!-- Project Card 2: Browser Script for Content Filtering -->
+            <div class="p-6 bg-gray-800 rounded-xl shadow-lg">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-2xl font-bold text-gray-100">Browser Script for Content Filtering</h3>
+                    <span class="text-md text-blue-400 font-semibold">2022</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-3">Tools: JavaScript, HTML, CSS</p>
+                <ul class="space-y-2 text-gray-400 list-disc list-inside text-sm">
+                    <li>Created a browser script to improve UI by automatically removing ads and filtering unwanted content.</li>
+                    <li>Designed a user-facing dashboard with real-time analytics and custom filter controls for content personalization.</li>
+                    <li>Published as open-source to encourage community collaboration and iterative improvement.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-10">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-500">
+                &copy; <span id="current-year-2"></span> Robert Ciuchi. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle logic
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.querySelector('svg:first-child').classList.toggle('hidden');
+                mobileMenuButton.querySelector('svg:last-child').classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.querySelector('svg:first-child').classList.remove('hidden');
+                    mobileMenuButton.querySelector('svg:last-child').classList.add('hidden');
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('current-year-2').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>

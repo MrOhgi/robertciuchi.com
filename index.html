@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Portfolio Template</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for smooth scrolling and font */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar styling for a darker theme */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #3b82f6; /* Blue 500 */
+            border-radius: 4px;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: #1f2937; /* Gray 800 */
+        }
+        /* Style for the active link on hover/focus */
+        .nav-link:hover, .nav-link:focus {
+            color: #3b82f6; /* Blue 500 */
+            transition: color 0.2s;
+        }
+        /* Custom gradient text similar to the reference site */
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text; /* Include non-prefixed version for future compatibility */
+            /* Removed the unsupported 'text-fill-color: transparent;' line */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-2xl font-bold gradient-text">
+                        Dev. Template
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#projects" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#projects" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="pt-20 pb-28 text-center md:text-left flex flex-col md:flex-row items-center justify-between min-h-screen-16">
+            <div class="md:w-3/5 space-y-6">
+                <h2 class="text-xl text-blue-400 font-medium">Hello, I'm</h2>
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold leading-tight">
+                    <span class="gradient-text block">Astro Dev</span>
+                    <span class="block text-gray-300">Software Engineer</span>
+                </h1>
+                <p class="text-lg text-gray-400 max-w-xl mx-auto md:mx-0">
+                    Building robust, scalable applications and delightful user experiences. Specializing in modern JavaScript frameworks and cloud-native architectures.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4 pt-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-xl shadow-blue-500/30">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-gray-200 font-semibold py-3 px-8 rounded-lg transition duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <!-- Placeholder Image/SVG -->
+            <div class="mt-10 md:mt-0 md:w-2/5 flex justify-center">
+                <!-- Inline SVG for a clean, code-like graphic -->
+                <svg viewBox="0 0 100 100" class="w-64 h-64 sm:w-80 sm:h-80 opacity-70" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="80" height="80" rx="10" ry="10" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                    <polyline points="25,35 45,65 65,35 85,65" fill="none" stroke="#60a5fa" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="50" cy="50" r="8" fill="#3b82f6"/>
+                    <text x="50" y="94" font-family="Inter" font-size="10" fill="#60a5fa" text-anchor="middle" font-weight="bold">&lt;/CODE&gt;</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-10 text-center gradient-text">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-gray-400 text-lg">
+                    <p>I am a passionate Full Stack Developer with over 5 years of experience designing and implementing highly-available web applications. My journey started with a fascination for how simple lines of code could solve complex, real-world problems.</p>
+                    <p>My core expertise lies in the **MERN stack** (MongoDB, Express, React, Node.js), but I am constantly exploring new technologies to stay ahead of industry trends. I thrive in collaborative environments and am committed to writing clean, maintainable, and efficient code.</p>
+                </div>
+                <!-- Mock-up of a profile picture container -->
+                <div class="flex justify-center">
+                    <div class="w-64 h-64 bg-gray-700 rounded-full border-4 border-blue-600 overflow-hidden shadow-2xl shadow-blue-500/20 flex items-center justify-center">
+                        <span class="text-6xl text-blue-400 font-light">JD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Skills & Technologies</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+                <!-- Skill Card Template -->
+                <div class="flex flex-col items-center p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder SVG Icon (React) -->
+                    <svg class="w-12 h-12 text-blue-400 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="20" y1="4" x2="18.3" y2="5.7"/><line x1="3.8" y1="20.2" x2="5.5" y2="18.5"/><line x1="22" y1="12" x2="20" y2="12"/><line x1="4" y1="12" x2="2" y2="12"/><line x1="20.2" y1="20.2" x2="18.5" y2="18.5"/><line x1="5.7" y1="5.7" x2="3.8" y2="3.8"/></svg>
+                    <p class="text-lg font-semibold text-gray-200">React</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder SVG Icon (Node.js) -->
+                    <svg class="w-12 h-12 text-green-400 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/><line x1="4" y1="9" x2="6" y2="9"/><line x1="4" y1="15" x2="6" y2="15"/></svg>
+                    <p class="text-lg font-semibold text-gray-200">Node.js</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder SVG Icon (MongoDB) -->
+                    <svg class="w-12 h-12 text-green-600 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                    <p class="text-lg font-semibold text-gray-200">MongoDB</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder SVG Icon (Tailwind CSS) -->
+                    <svg class="w-12 h-12 text-cyan-400 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 1h-11L1 17h11zM11 17l6.5 6.5"/></svg>
+                    <p class="text-lg font-semibold text-gray-200">Tailwind</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder SVG Icon (TypeScript) -->
+                    <svg class="w-12 h-12 text-blue-700 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2"/><path d="M7 21h10a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+                    <p class="text-lg font-semibold text-gray-200">TypeScript</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">
+                    <!-- Placeholder SVG Icon (Cloud/AWS) -->
+                    <svg class="w-12 h-12 text-orange-400 mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 18H5a2 2 0 0 1-2-2c0-1.28.6-2.43 1.57-3.14A3.94 3.94 0 0 1 5 9h14a3 3 0 0 1 0 6h-2"/><path d="M10 13l2 2 2-2"/><path d="M12 15V9"/></svg>
+                    <p class="text-lg font-semibold text-gray-200">AWS</p>
+                </div>
+                <!-- End Skill Card Template -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/30 transition duration-500">
+                    <!-- Placeholder Image -->
+                    <img src="https://placehold.co/600x400/1f2937/9ca3af?text=Project+1" class="w-full h-48 object-cover" alt="Project Placeholder Image 1" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1f2937/9ca3af?text=Project+1+Error';" loading="lazy">
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-2xl font-bold text-gray-100">E-Commerce Platform</h3>
+                        <p class="text-gray-400 text-sm">A full-stack e-commerce solution built with React and Node.js. Features payment processing, inventory management, and user authentication.</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">React</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">Express</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-500 transition duration-300 font-medium pt-2">
+                            View Live
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/30 transition duration-500">
+                    <img src="https://placehold.co/600x400/1f2937/9ca3af?text=Project+2" class="w-full h-48 object-cover" alt="Project Placeholder Image 2" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1f2937/9ca3af?text=Project+2+Error';" loading="lazy">
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-2xl font-bold text-gray-100">Real-Time Chat App</h3>
+                        <p class="text-gray-400 text-sm">A highly performant real-time chat application using WebSockets (Socket.IO) for instant messaging across multiple rooms.</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">Vue.js</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">Socket.IO</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">Redis</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-500 transition duration-300 font-medium pt-2">
+                            View Code
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-blue-500/30 transition duration-500">
+                    <img src="https://placehold.co/600x400/1f2937/9ca3af?text=Project+3" class="w-full h-48 object-cover" alt="Project Placeholder Image 3" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1f2937/9ca3af?text=Project+3+Error';" loading="lazy">
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-2xl font-bold text-gray-100">Data Visualization Dashboard</h3>
+                        <p class="text-gray-400 text-sm">A BI dashboard consuming REST APIs to display complex data using D3.js charts and a modern UI.</p>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">Next.js</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">D3.js</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">GraphQL</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-500 transition duration-300 font-medium pt-2">
+                            View Live
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 border-t border-gray-800">
+            <h2 class="text-4xl font-bold mb-10 text-center gradient-text">Get In Touch</h2>
+            <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl space-y-6">
+                <p class="text-gray-400 text-center">I am currently open to new opportunities. Send me a message, and I'll get back to you as soon as possible!</p>
+
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300">Your Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Your Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-xl shadow-blue-500/30">
+                        Send Message
+                    </button>
+                    <p id="form-status" class="text-center text-sm pt-2 h-6"></p>
+                </form>
+
+                <div class="flex justify-center space-x-6 pt-4 border-t border-gray-700 mt-6">
+                    <!-- Social Links (using placeholders for icons) -->
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM4 9h4v12H4zM6 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.423 2.858 8.136 6.837 9.489.5.092.682-.218.682-.482 0-.237-.008-.865-.013-1.724-2.788.604-3.376-1.34-3.376-1.34-.455-1.152-1.112-1.458-1.112-1.458-.908-.618.068-.606.068-.606 1.002.071 1.531 1.03 1.531 1.03.89 1.529 2.336 1.087 2.905.833.091-.645.349-1.087.633-1.339-2.228-.255-4.568-1.114-4.568-4.94 0-1.091.39-1.986 1.029-2.682-.103-.255-.446-1.268.098-2.64 0 0 .84-.268 2.75 1.025a9.43 9.43 0 0 1 2.5-.333c.847-.07 1.695-.07 2.5.333 1.91-1.293 2.75-1.025 2.75-1.025.546 1.372.203 2.385.103 2.64.64.696 1.03 1.591 1.03 2.682 0 3.837-2.344 4.681-4.576 4.933.36.31.683.927.683 1.868 0 1.346-.013 2.428-.013 2.75 0 .267.18.577.688.484C19.14 20.15 22 16.437 22 12.017 22 6.484 17.523 2 12 2z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition duration-300" aria-label="Twitter/X">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.852L4.99 21.75H1.68l7.23-8.26L2.55 2.25H8.08L12 7.02l3.92-4.77h3.08zM17.8 19.866h-.813L6.925 4.661h.875L17.8 19.866z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-10">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-500">
+                &copy; <span id="current-year"></span> Dev. Template. All Rights Reserved.
+            </p>
+            <p class="text-xs text-gray-600 mt-2">
+                Built with Tailwind CSS
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Mobile menu toggle logic
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+
+                // Toggle Hamburger/X icon
+                mobileMenuButton.querySelector('svg:first-child').classList.toggle('hidden');
+                mobileMenuButton.querySelector('svg:last-child').classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenuButton.querySelector('svg:first-child').classList.remove('hidden');
+                    mobileMenuButton.querySelector('svg:last-child').classList.add('hidden');
+                });
+            });
+
+
+            // Custom "Contact Form" submission handler (prevents page reload)
+            const contactForm = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Simple form validation and status update
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                if (name && email && message) {
+                    formStatus.className = 'text-center text-sm pt-2 text-green-400';
+                    formStatus.textContent = 'Thank you for your message, ' + name + '! I will respond shortly.';
+                    contactForm.reset();
+                } else {
+                    formStatus.className = 'text-center text-sm pt-2 text-red-400';
+                    formStatus.textContent = 'Please fill out all fields.';
+                }
+                
+                // Reset status message after 5 seconds
+                setTimeout(() => {
+                    formStatus.textContent = '';
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+</html>
